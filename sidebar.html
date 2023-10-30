@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body,
+html {
+  height: 100%;
+  width: 99%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient( 135deg, #70F570 10%, #49C628 100%) no-repeat fixed;
+  text-align: center;
+  font-family: "Lato";
+}
+
+aside {
+
+    margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  background: #252930;
+  transform: translate(200%);
+  transition: all 0.7s;
+  text-align: left;
+  float: left;
+  position: fixed;
+  box-shadow: 14px 14px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #607D8B;
+  padding: 2rem 0;
+  font-size: 1rem;
+  transition: all 0.1s;
+  color: #dae8ee;
+  transition: all 0.3s;
+}
+span:hover {
+  cursor: pointer;
+  background: #37474F;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+input {
+  display: none;
+  margin: 3em;
+  float: right;
+}
+
+input + label {
+  float: right;
+  display: inline-block;
+  margin: -0.1em;
+  padding: 0.5em;
+  background: transparent;
+  font-size: 2.7em;
+  color: #252930;
+}
+
+input + label:hover {
+  cursor: pointer;
+}
+
+input:checked + label + aside {
+  transform: translate(0%);
+}
+    </style>
+</head>
+<body>
+    
+
+    <input type="checkbox" id="check">
+<label for="check"><i class="fa fa-bars"></i></label>
+
+<aside>
+  <span>Start</span>
+  <span>Products</span>
+  <span>Pricing</span>
+  <span>About</span>
+  <span>Contact</span>
+</aside>
+</body>
+</html>
