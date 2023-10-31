@@ -446,34 +446,39 @@
      justify-content: space-between;
      align-items: center;
      height: 95vh;
+     position: relative;
 
  }
 
  .hHero {
      color: gold;
-     line-height: normal;
+     line-height: 70px;
+     font-weight: 900;
+     margin-block: 0px !important;
+     font-size: 70px ;
  }
 
  .hHero>span {
      color: #fff;
-     font-size: xxx-large;
+     font-size: 70px ;
+     margin-block: 0px !important;
  }
 
  .leftHero {
      width: 65%;
+     
  }
 
  .rightHero {
      width: 35%;
  }
 
- .mry-2 {
-     margin-block: 1rem;
- }
+ 
 
  .hpar {
      font-size: 20px;
      color: #fff;
+     padding-top: 20px;
  }
 
  .heroCard {
@@ -485,10 +490,7 @@
      /* margin-top: 10rem; */
  }
 
- .leftSide {
-     position: relative;
-     top: 12rem;
- }
+ 
 
  .hh3 {
      color: #000;
@@ -555,6 +557,13 @@
      color: #030e31;
  }
 
+
+ .mediaicons{
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+
+ }
  .Icons {
      display: flex;
 
@@ -567,7 +576,11 @@
  .flexCenter {
      display: flex;
      align-items: center;
-     margin-top: 3rem;
+     /* margin-top: 3rem; */
+ }
+ .settingiconssoc{
+    position: absolute;
+    bottom: -60px;
  }
 
  .mainIcon {
@@ -669,6 +682,24 @@
 
  @media(max-width:992px) {
 
+     .mfl {
+     margin-left: 0px;
+ }
+
+ .mfl {
+     margin-right: 0px;
+ }
+
+    .mediaicons{
+        display: none;
+    }
+
+     .settingiconssoc{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+ }
+
      .herosection {
          flex-direction: column;
          height: 100%;
@@ -732,12 +763,24 @@
 
 
  @media(max-width:556px) {
+
+    .sliderfirstmain{
+        margin-top: 30px;
+    }
+
+     .videoseccong svg {
+    
+     position: absolute;
+     right: 100px !important;
+     top: 130px;
+
+ }
      .heroCard {
          margin-top: 6rem;
      }
 
      .mainIcon {
-         top: 8rem;
+         top: 5rem;
      }
 
      .intro {
@@ -749,6 +792,10 @@
      }
 
      .hHero {
+         font-size: 40px;
+         line-height: 40px;
+     }
+     .hHero >span{
          font-size: 40px;
      }
 
@@ -812,11 +859,14 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     padding-block: 50px;
 
  }
 
  .work {
      margin-top: 14rem;
+
+     padding-bottom: 50px;
  }
 
  .wywork-row {
@@ -1066,9 +1116,7 @@
 
  .vidoecontent {
 
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
+   
      padding-block: 50px;
  }
 
@@ -1602,6 +1650,8 @@
 
  .testSingle {
      margin-block: 1rem;
+
+     margin: 10px;
  }
 
  /* reh new css */
@@ -1668,6 +1718,10 @@
  }
 
 
+ .logosliderdesign{
+    width: 200px;
+ }
+
 
 
  @media (max-width: 1366px) {
@@ -1698,7 +1752,17 @@
      .work {
          padding-inline: 120px;
      }
+     
+
+
  }
+ @media(min-width:992px)
+ {
+    .secondicons{
+        display: none !important;
+    }
+ }
+ 
 
  @media (max-width: 880px) {
      .work {
@@ -1707,7 +1771,9 @@
  }
 
  @media (max-width: 768px) {
-     .work {}
+      .work {
+     margin-top: 3rem;
+ }
  }
 
  @media (max-width: 767px) {
@@ -1732,10 +1798,24 @@
 
  @media (max-width: 412px) {
      .work {
-         padding-inline: 20px;
+         padding-inline: 5px;
      }
  }
 
+ .videoheading{
+    padding-top: 30px;
+ }
+ .vidoecontent{
+    padding-block: 5px;
+ }
+ .mainsectionmconteiner{
+    
+ }
+
+
+ .footer{
+    margin-top: 30px;
+ }
 
  .card-tittle {
      margin-block: 1rem;
