@@ -525,13 +525,13 @@
 
  }
 
- .mfl {
+  /* .mfl {
      margin-left: 0.5rem;
- }
+ } */
 
  .mfl {
      margin-right: 0.5rem;
- }
+ } 
 
  .phone {
      display: flex;
