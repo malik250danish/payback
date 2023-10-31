@@ -106,6 +106,11 @@ padding-bottom: 20px;
 
 @media(max-width:768px)
 {
+
+  .sliderfirstmain{
+        margin-top: 30px;
+    }
+
         .sliderfirst {
     width: 100%;
    
@@ -1592,6 +1597,7 @@ $(document).ready(function () {
         infinite: true,  // Enable infinite loop
         speed: 300,  // Transition speed
         slidesToShow: 3,  // Number of slides to show at a time
+         autoplay: true, 
 
         responsive: [
            {
@@ -1602,13 +1608,13 @@ $(document).ready(function () {
                 }
             },
             
-            {
-                breakpoint: 768,  // Small screen size
-                settings: {
-                    slidesToShow: 1,  // Show 1 slide on small screens
-                    slidesToScroll: 1,  // Scroll 1 slide on small screens
-                }
-            }
+            // {
+            //     breakpoint: 768,  // Small screen size
+            //     settings: {
+            //         slidesToShow: 1,  // Show 1 slide on small screens
+            //         slidesToScroll: 1,  // Scroll 1 slide on small screens
+            //     }
+            // }
         ]
     });
 });
@@ -1621,6 +1627,7 @@ $(document).ready(function () {
         infinite: true,  // Enable infinite loop
         speed: 300,  // Transition speed
         slidesToShow: 2,  // Number of slides to show at a time
+         autoplay: true, 
 
         responsive: [
             
@@ -1642,6 +1649,8 @@ $(document).ready(function () {
         infinite: true,  // Enable infinite loop
         speed: 300,  // Transition speed
         slidesToShow: 3,  // Number of slides to show at a time
+
+         autoplay: true, 
 
         responsive: [
              {
@@ -1669,6 +1678,7 @@ $(document).ready(function () {
         infinite: true,  // Enable infinite loop
         speed: 300,  // Transition speed
         slidesToShow: 3,  // Number of slides to show at a time
+         autoplay: true, 
 
         responsive: [
              {
